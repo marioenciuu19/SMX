@@ -23,7 +23,7 @@ Hora de finalización.
 Estado del servicio.
 
 
-El administrador podrá crear, modificar, cancelar y reasignar citas.
+**El administrador podrá crear, modificar, cancelar y reasignar citas.**
 
 Por ejemplo:
 
@@ -36,7 +36,7 @@ Trabajador: Juan
 Estado: Pendiente
 
 
-"También podremos utilizar diferentes estados para identificar rápidamente cada servicio"
+**También podremos utilizar diferentes estados para identificar rápidamente cada servicio:**
 
 Pendiente.
 
