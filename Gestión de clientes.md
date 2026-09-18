@@ -1,6 +1,6 @@
 # Gestión de clientes
 
-El panel dispondrá de una sección llamada "Clientes" donde la empresa podrá gestionar todas las personas o empresas que utilizan sus servicios.
+**El panel dispondrá de una sección llamada "Clientes" donde la empresa podrá gestionar todas las personas o empresas que utilizan sus servicios.**
 
 Se podrá:
 
@@ -22,4 +22,4 @@ Añadir observaciones.
 
 Consultar incidencias relacionadas con el cliente.
 
-Al entrar en un cliente se mostrará una ficha con toda su información y su historial.
+**Al entrar en un cliente se mostrará una ficha con toda su información y su historial.**
