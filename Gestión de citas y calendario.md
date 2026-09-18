@@ -22,6 +22,7 @@ Hora de finalización.
 
 Estado del servicio.
 
+
 El administrador podrá crear, modificar, cancelar y reasignar citas.
 
 Por ejemplo:
@@ -34,11 +35,15 @@ Trabajador: Juan
 
 Estado: Pendiente
 
+
 También podremos utilizar diferentes estados para identificar rápidamente cada servicio:
 
 Pendiente.
 
 Confirmado.
+
 En proceso.
+
 Completado.
+
 Cancelado.
