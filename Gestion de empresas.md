@@ -1,6 +1,6 @@
 # Gestión de empresas
 
-Desde el panel de administración, cada empresa podrá consultar y modificar la información de su negocio.
+**Desde el panel de administración, cada empresa podrá consultar y modificar la información de su negocio.**
 
 Se mostrará información como:
 
@@ -22,4 +22,4 @@ Servicios ofrecidos.
 
 Datos fiscales.
 
-También podrá modificar la configuración de su empresa y personalizar la información que aparecerá en su página web pública.
+**También podrá modificar la configuración de su empresa y personalizar la información que aparecerá en su página web pública.**
