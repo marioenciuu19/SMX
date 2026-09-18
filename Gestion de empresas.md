@@ -1,4 +1,4 @@
-Gestión de empresas
+# Gestión de empresas
 
 Desde el panel de administración, cada empresa podrá consultar y modificar la información de su negocio.
 
