@@ -1,14 +1,12 @@
 # CleanFlow
 Plataforma SaaS de gestión empresarial para empresas de servicios
-Descripción
 
+# Descripción
 CleanFlow es una aplicación web diseñada para ayudar a pequeñas y medianas empresas de servicios a gestionar su actividad desde una única plataforma.
-
 El sistema permitirá gestionar clientes, trabajadores, servicios, citas, presupuestos, facturas, pagos, inventario y otra información relacionada con la actividad de la empresa.
-
 Además, cada empresa dispondrá de una página web pública generada automáticamente a partir de la información almacenada en la plataforma.
 
-Objetivos principales
+# Objetivos principales
 Gestión de empresas.
 Gestión de clientes.
 Gestión de trabajadores.
