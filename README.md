@@ -8,16 +8,29 @@ Además, cada empresa dispondrá de una página web pública generada automátic
 
 # Objetivos principales
 Gestión de empresas.
+
 Gestión de clientes.
+
 Gestión de trabajadores.
+
 Gestión de servicios.
+
 Gestión de citas y calendario.
+
 Creación y gestión de presupuestos.
+
 Gestión de facturas y pagos.
+
 Gestión de inventario.
+
 Área privada para clientes.
+
 Página web pública para cada empresa.
+
 Generación de informes.
+
 Integración de Inteligencia Artificial.
+
 Sistema multiempresa.
+
 Protección y separación de los datos de cada empresa.
