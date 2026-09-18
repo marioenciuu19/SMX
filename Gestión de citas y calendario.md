@@ -36,7 +36,7 @@ Trabajador: Juan
 Estado: Pendiente
 
 
-También podremos utilizar diferentes estados para identificar rápidamente cada servicio:
+"También podremos utilizar diferentes estados para identificar rápidamente cada servicio"
 
 Pendiente.
 
