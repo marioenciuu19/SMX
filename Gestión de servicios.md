@@ -20,7 +20,7 @@ Imagen.
 
 Categoría.
 
-Por ejemplo:
+**Por ejemplo:**
 
 Limpieza de oficina
 
