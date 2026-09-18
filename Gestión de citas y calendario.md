@@ -1,6 +1,6 @@
 # Gestión de citas y calendario
 
-El panel tendrá un calendario donde la empresa podrá visualizar todos los servicios programados.
+**El panel tendrá un calendario donde la empresa podrá visualizar todos los servicios programados.**
 
 Se podrán consultar:
 
