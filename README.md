@@ -1,410 +1,610 @@
-# CleanFlow
-Plataforma SaaS de gestión empresarial para empresas de servicios
+# 🧹 CleanFlow
+
+### Plataforma SaaS de gestión empresarial para empresas de servicios
+
+---
+
+# 📑 Índice
+
+1. [Introducción — ¿Qué estamos haciendo?](#1-introducción--qué-estamos-haciendo)
+2. [Briefing de ideas](#2-briefing-de-ideas)
+3. [Arquitectura del software](#3-arquitectura-del-software)
+4. [Tecnologías a utilizar](#4-tecnologías-a-utilizar)
+5. [Red](#5-red)
+6. [Diagrama de la red](#6-diagrama-de-la-red)
+7. [Mapa físico](#7-mapa-físico)
+8. [Mapa lógico](#8-mapa-lógico)
+9. [Web](#9-web)
+10. [Diseño](#10-diseño)
+11. [Mockup](#11-mockup)
+12. [Mapa de navegabilidad](#12-mapa-de-navegabilidad)
+13. [Base de datos](#13-base-de-datos)
+14. [Servicios](#14-servicios)
+15. [DNS](#15-dns)
+16. [DHCP](#16-dhcp)
+17. [Apache](#17-apache)
+18. [Firewall](#18-firewall)
+19. [Copias de seguridad](#19-copias-de-seguridad)
+20. [Conclusiones](#20-conclusiones)
+21. [Bibliografía](#21-bibliografía)
+22. [Guías de usuario](#22-guías-de-usuario)
+
+---
+
+# 1. Introducción — ¿Qué estamos haciendo?
+
+CleanFlow es una plataforma SaaS diseñada para ayudar a pequeñas y medianas empresas de servicios a gestionar su actividad desde una única aplicación.
+
+El objetivo principal es centralizar en una misma plataforma la gestión de:
+
+* Clientes.
+* Trabajadores.
+* Servicios.
+* Citas.
+* Presupuestos.
+* Facturas.
+* Pagos.
+* Inventario.
+* Informes.
 
-# Descripción
-CleanFlow es una aplicación web diseñada para ayudar a pequeñas y medianas empresas de servicios a gestionar su actividad desde una única plataforma.
-El sistema permitirá gestionar clientes, trabajadores, servicios, citas, presupuestos, facturas, pagos, inventario y otra información relacionada con la actividad de la empresa.
-Además, cada empresa dispondrá de una página web pública generada automáticamente a partir de la información almacenada en la plataforma.
+Además, cada empresa podrá disponer de una página web pública generada automáticamente a partir de la información almacenada en CleanFlow.
 
-# Objetivos principales
-Gestión de empresas.
+---
 
-Gestión de clientes.
+# 2. Briefing de ideas
+
+## 💡 Idea principal
+
+Crear una plataforma de gestión empresarial que permita a las empresas de servicios administrar su negocio de forma sencilla desde un único lugar.
+
+## 🎯 Público objetivo
+
+CleanFlow estará dirigido principalmente a:
+
+* Pequeñas empresas.
+* Medianas empresas.
+* Empresas de limpieza.
+* Empresas de mantenimiento.
+* Empresas de servicios profesionales.
+* Autónomos que necesiten gestionar clientes y servicios.
 
-Gestión de trabajadores.
+## 🚀 Objetivos
 
-Gestión de servicios.
+* Centralizar la información.
+* Facilitar la gestión de clientes.
+* Organizar trabajadores.
+* Gestionar servicios y citas.
+* Controlar presupuestos y facturas.
+* Controlar inventario.
+* Crear páginas web para empresas.
+* Separar los datos de cada empresa.
+* Incorporar Inteligencia Artificial.
+
+---
+
+# 3. Arquitectura del software
+
+La arquitectura de CleanFlow estará dividida principalmente en diferentes componentes:
+
+```text
+┌─────────────────────┐
+│       USUARIO       │
+└──────────┬──────────┘
+           │
+           ▼
+┌─────────────────────┐
+│      FRONTEND       │
+│    Aplicación Web   │
+└──────────┬──────────┘
+           │
+           ▼
+┌─────────────────────┐
+│       BACKEND       │
+│       API REST      │
+└──────────┬──────────┘
+           │
+           ▼
+┌─────────────────────┐
+│     BASE DE DATOS   │
+└─────────────────────┘
+```
+
+El frontend será responsable de la interfaz que utilizarán los usuarios.
 
-Gestión de citas y calendario.
+El backend gestionará la lógica de la aplicación y las peticiones.
 
-Creación y gestión de presupuestos.
+La base de datos almacenará la información de las empresas, usuarios, clientes, servicios, citas y demás elementos del sistema.
 
-Gestión de facturas y pagos.
+---
 
-Gestión de inventario.
+# 4. Tecnologías a utilizar
 
-Área privada para clientes.
+Las tecnologías definitivas se determinarán durante la fase de diseño técnico.
+
+Se contemplan tecnologías para:
 
-Página web pública para cada empresa.
+* Desarrollo frontend.
+* Desarrollo backend.
+* Base de datos.
+* Servidor web.
+* Control de versiones.
+* Diseño.
+* Pruebas.
+* Despliegue.
 
-Generación de informes.
+### Herramientas
 
-Integración de Inteligencia Artificial.
+* Git.
+* GitHub.
+* Visual Studio Code.
+* Docker.
+* Postman.
+
+---
+
+# 5. Red
+
+La infraestructura de red permitirá conectar los diferentes dispositivos y servicios necesarios para el funcionamiento de CleanFlow.
 
-Sistema multiempresa.
+Se tendrán en cuenta:
 
-Protección y separación de los datos de cada empresa.
+* Router.
+* Switch.
+* Firewall.
+* Servidores.
+* Ordenadores.
+* Puntos de acceso.
+* Internet.
+* Direccionamiento IP.
+* DNS.
+* DHCP.
 
-Funcionalidades del panel de gestión de CleanFlow
-1. Gestión de empresas
+---
 
-Desde el panel de administración, cada empresa podrá consultar y modificar la información de su negocio.
+# 6. Diagrama de la red
 
-Se mostrará información como:
+El diagrama de red representará las conexiones entre los diferentes dispositivos.
+
+Ejemplo:
+
+```text
+                  INTERNET
+                      │
+                      ▼
+                   ROUTER
+                      │
+                      ▼
+                  FIREWALL
+                      │
+                      ▼
+                    SWITCH
+             ┌────────┼────────┐
+             │        │        │
+             ▼        ▼        ▼
+          SERVIDOR   PCs    ACCESS POINT
+             │
+             ▼
+          SERVICIOS
+```
+
+---
+
+# 7. Mapa físico
 
-Nombre de la empresa.
-Logotipo.
-Dirección.
-Teléfono.
-Correo electrónico.
-Horario de atención.
-Descripción de la empresa.
-Servicios ofrecidos.
-Datos fiscales.
+El mapa físico mostrará la ubicación de los dispositivos dentro de la infraestructura.
 
-También podrá modificar la configuración de su empresa y personalizar la información que aparecerá en su página web pública.
+Se representarán:
 
-2. Gestión de clientes
+* Rack.
+* Servidor.
+* Router.
+* Firewall.
+* Switch.
+* Ordenadores.
+* Access Points.
+* Cableado.
+* Otros dispositivos de red.
+
+---
+
+# 8. Mapa lógico
+
+El mapa lógico representará cómo está organizada la red a nivel de direccionamiento y servicios.
+
+Se incluirán:
+
+* Direcciones IP.
+* Subredes.
+* VLAN.
+* Puerta de enlace.
+* DNS.
+* DHCP.
+* Servidores.
+* Reglas de comunicación.
+
+---
+
+# 9. Web
+
+CleanFlow contará con una aplicación web desde la que los usuarios podrán gestionar sus empresas.
+
+## Funcionalidades
+
+* Gestión de empresas.
+* Gestión de clientes.
+* Gestión de trabajadores.
+* Gestión de servicios.
+* Gestión de citas.
+* Gestión de presupuestos.
+* Gestión de facturas.
+* Gestión de pagos.
+* Gestión de inventario.
+* Informes.
+* Área privada para clientes.
+* Página pública de cada empresa.
+
+---
+
+# 10. Diseño
+
+El diseño de CleanFlow buscará ofrecer una interfaz:
+
+* Sencilla.
+* Moderna.
+* Profesional.
+* Intuitiva.
+* Responsive.
+
+Se definirán:
+
+* Logotipo.
+* Colores.
+* Tipografías.
+* Iconos.
+* Botones.
+* Formularios.
+* Menús.
+* Dashboard.
+* Diseño móvil.
+
+---
+
+# 11. Mockup
+
+Los mockups representarán visualmente cómo será la aplicación antes de comenzar el desarrollo.
+
+Se diseñarán pantallas como:
+
+* Login.
+* Dashboard.
+* Clientes.
+* Trabajadores.
+* Servicios.
+* Calendario.
+* Presupuestos.
+* Facturas.
+* Inventario.
+* Área del cliente.
+* Página pública.
+
+---
+
+# 12. Mapa de navegabilidad
+
+El mapa de navegabilidad mostrará cómo se desplaza el usuario por la aplicación.
+
+```text
+LOGIN
+  │
+  ▼
+DASHBOARD
+  │
+  ├── Empresas
+  │
+  ├── Clientes
+  │
+  ├── Trabajadores
+  │
+  ├── Servicios
+  │
+  ├── Citas
+  │
+  ├── Presupuestos
+  │
+  ├── Facturas
+  │
+  ├── Inventario
+  │
+  └── Configuración
+```
+
+Los accesos disponibles dependerán del tipo de usuario y de sus permisos.
+
+---
+
+# 13. Base de datos
+
+La base de datos almacenará toda la información necesaria para el funcionamiento de CleanFlow.
+
+Se contemplan entidades como:
+
+```text
+USUARIOS
+   │
+   ▼
+EMPRESAS
+   │
+   ├── CLIENTES
+   │
+   ├── TRABAJADORES
+   │
+   ├── SERVICIOS
+   │
+   ├── CITAS
+   │
+   ├── PRESUPUESTOS
+   │
+   ├── FACTURAS
+   │
+   ├── PAGOS
+   │
+   ├── INVENTARIO
+   │
+   └── INFORMES
+```
+
+La estructura deberá garantizar que los datos de cada empresa estén correctamente separados.
+
+---
+
+# 14. Servicios
+
+CleanFlow utilizará diferentes servicios para funcionar.
+
+De forma sencilla:
+
+```text
+USUARIO
+   │
+   ▼
+WEB
+   │
+   ▼
+APACHE
+   │
+   ▼
+BACKEND
+   │
+   ▼
+BASE DE DATOS
+```
+
+Cada servicio tendrá una función concreta dentro de la infraestructura.
+
+En esta sección se explicará:
+
+* Qué hace cada servicio.
+* Para qué sirve.
+* Dónde está instalado.
+* Cómo se comunica con los demás servicios.
+* Qué información gestiona.
+
+---
+
+# 15. DNS
+
+El DNS será el encargado de traducir nombres de dominio a direcciones IP.
+
+Ejemplo:
+
+```text
+cleanflow.es
+      │
+      ▼
+Dirección IP del servidor
+      │
+      ▼
+Aplicación CleanFlow
+```
+
+También se podrán utilizar subdominios para diferentes servicios.
+
+---
+
+# 16. DHCP
+
+DHCP permitirá asignar automáticamente configuraciones de red a los dispositivos.
+
+Podrá proporcionar:
+
+* Dirección IP.
+* Máscara de red.
+* Puerta de enlace.
+* Servidor DNS.
+
+Ejemplo:
+
+```text
+DISPOSITIVO
+     │
+     ▼
+   DHCP
+     │
+     ▼
+IP + MÁSCARA + GATEWAY + DNS
+```
+
+---
+
+# 17. Apache
+
+Apache será utilizado como servidor web dentro de la infraestructura.
+
+Sus funciones podrán incluir:
+
+* Recibir peticiones HTTP/HTTPS.
+* Servir contenido web.
+* Gestionar dominios.
+* Gestionar Virtual Hosts.
+* Trabajar con HTTPS.
+* Redirigir peticiones hacia los servicios correspondientes.
+
+Ejemplo:
+
+```text
+USUARIO
+   │
+   ▼
+HTTPS
+   │
+   ▼
+APACHE
+   │
+   ▼
+APLICACIÓN
+```
+
+---
+
+# 18. Firewall
+
+El firewall será uno de los elementos principales de seguridad de la infraestructura.
+
+Su función será controlar el tráfico de red y permitir o bloquear conexiones según las reglas configuradas.
+
+```text
+             INTERNET
+                 │
+                 ▼
+             FIREWALL
+             /      \
+            /        \
+       PERMITIDO    BLOQUEADO
+          │             │
+          ▼             ▼
+       SERVIDOR          ❌
+```
+
+Se definirán reglas para controlar:
+
+* Tráfico entrante.
+* Tráfico saliente.
+* Puertos.
+* Servicios.
+* Accesos externos.
+* Accesos internos.
+
+---
+
+# 19. Copias de seguridad
+
+CleanFlow necesitará un sistema de copias de seguridad para proteger la información.
+
+Se realizarán copias de elementos como:
 
-El panel dispondrá de una sección llamada "Clientes" donde la empresa podrá gestionar todas las personas o empresas que utilizan sus servicios.
+* Base de datos.
+* Archivos.
+* Configuración.
+* Documentación necesaria.
 
-Se podrá:
+El sistema deberá contemplar:
 
-Añadir nuevos clientes.
-Editar sus datos.
-Consultar su información.
-Ver su historial de servicios.
-Consultar presupuestos.
-Consultar facturas.
-Consultar pagos.
-Añadir observaciones.
-Consultar incidencias relacionadas con el cliente.
+* Frecuencia de las copias.
+* Ubicación.
+* Retención.
+* Recuperación.
+* Pruebas de restauración.
 
-Al entrar en un cliente se mostrará una ficha con toda su información y su historial.
+---
 
-3. Gestión de trabajadores
+# 20. Conclusiones
 
-La empresa tendrá una sección para gestionar a sus empleados o trabajadores.
+En esta sección se analizará el resultado final del proyecto.
 
-El administrador podrá:
+Se explicará:
 
-Añadir trabajadores.
-Modificar sus datos.
-Consultar sus servicios asignados.
-Consultar su calendario.
-Asignar servicios.
-Consultar el estado de los trabajos.
-Gestionar los permisos de acceso al panel.
+* Si se han cumplido los objetivos.
+* Qué funcionalidades se han desarrollado.
+* Qué problemas han aparecido.
+* Cómo se han solucionado.
+* Qué conocimientos se han adquirido.
+* Qué mejoras podrían realizarse en el futuro.
 
-Cada trabajador podrá tener un usuario y una contraseña para acceder únicamente a las funciones que le correspondan.
+---
 
-Por ejemplo, un trabajador podrá consultar sus servicios del día, mientras que el administrador podrá consultar los servicios de todos los trabajadores.
+# 21. Bibliografía
 
-4. Gestión de servicios
+En esta sección se incluirán todas las fuentes utilizadas durante el desarrollo del proyecto.
 
-En esta sección la empresa podrá crear y administrar los servicios que ofrece a sus clientes.
+Ejemplos:
 
-Cada servicio podrá contener:
+* Documentación oficial.
+* Libros.
+* Artículos.
+* Documentación técnica.
+* Tutoriales.
+* Recursos educativos.
 
-Nombre.
-Descripción.
-Precio.
-Duración estimada.
-Material necesario.
-Estado.
-Imagen.
-Categoría.
+---
 
-Por ejemplo:
+# 22. Guías de usuario
 
-Limpieza de oficina
+Se crearán diferentes guías dependiendo del tipo de usuario.
 
-Precio: 80 €
+## 👨‍💼 Administrador
 
-Duración: 3 horas
+La guía explicará:
 
-Descripción: Limpieza general de una oficina.
+* Inicio de sesión.
+* Configuración de la empresa.
+* Gestión de clientes.
+* Gestión de trabajadores.
+* Gestión de servicios.
+* Gestión de citas.
+* Presupuestos.
+* Facturas.
+* Pagos.
+* Inventario.
+* Informes.
 
-Estos servicios podrán aparecer posteriormente en la página web pública de la empresa.
+## 👷 Trabajador
 
-5. Gestión de citas y calendario
+La guía explicará:
 
-El panel tendrá un calendario donde la empresa podrá visualizar todos los servicios programados.
+* Inicio de sesión.
+* Consulta de servicios.
+* Calendario.
+* Servicios asignados.
+* Actualización de trabajos.
+* Creación de informes.
+* Subida de fotografías.
 
-Se podrán consultar:
+## 👤 Cliente
 
-Citas del día.
-Citas de la semana.
-Citas del mes.
-Cliente asociado.
-Servicio contratado.
-Trabajador asignado.
-Hora de inicio.
-Hora de finalización.
-Estado del servicio.
+La guía explicará:
 
-El administrador podrá crear, modificar, cancelar y reasignar citas.
+* Creación de cuenta.
+* Inicio de sesión.
+* Consulta de citas.
+* Consulta de servicios.
+* Presupuestos.
+* Facturas.
+* Pagos.
+* Informes.
+* Incidencias.
 
-Por ejemplo:
+---
 
-10:00 — Limpieza de oficina
+# 🚧 Estado del proyecto
 
-Cliente: Empresa García
+**En desarrollo**
 
-Trabajador: Juan
+Actualmente CleanFlow se encuentra en fase de planificación y diseño.
 
-Estado: Pendiente
+---
 
-También podremos utilizar diferentes estados para identificar rápidamente cada servicio:
+# 👨‍💻 Autor
 
-Pendiente.
-Confirmado.
-En proceso.
-Completado.
-Cancelado.
-6. Gestión de presupuestos
+**Mario**
 
-La empresa dispondrá de una sección para crear y gestionar presupuestos para sus clientes.
-
-El administrador podrá crear un presupuesto indicando:
-
-Cliente.
-Servicios.
-Productos o materiales.
-Cantidades.
-Precio.
-Descuentos.
-Impuestos.
-Precio total.
-Fecha.
-Fecha de validez.
-Observaciones.
-
-El presupuesto tendrá diferentes estados:
-
-Borrador.
-Enviado.
-Aceptado.
-Rechazado.
-Caducado.
-
-El cliente podrá consultar el presupuesto desde su área privada y, posteriormente, aceptarlo o rechazarlo.
-
-7. Gestión de facturas y pagos
-
-El panel tendrá una sección dedicada a las facturas y los pagos.
-
-La empresa podrá:
-
-Crear facturas.
-Consultar facturas.
-Descargar facturas.
-Consultar facturas pendientes.
-Registrar pagos.
-Consultar pagos realizados.
-Ver cantidades pendientes.
-Consultar el estado de cada factura.
-
-Por ejemplo:
-
-Factura #2026-001
-
-Cliente: Empresa García
-
-Total: 250 €
-
-Estado: Pendiente
-
-Cuando el cliente realice el pago, el estado podrá cambiar automáticamente a:
-
-Pagada
-
-Más adelante podremos integrar una plataforma de pagos online.
-
-8. Gestión de inventario
-
-La empresa tendrá un apartado para controlar los productos y materiales utilizados durante los servicios.
-
-Se podrá visualizar:
-
-Nombre del producto.
-Cantidad disponible.
-Unidad de medida.
-Precio.
-Stock mínimo.
-Proveedor.
-Fecha de última actualización.
-
-Por ejemplo:
-
-Producto: Limpiador multiusos
-
-Stock: 8 unidades
-
-Stock mínimo: 5 unidades
-
-Si la cantidad baja por debajo del mínimo establecido, el sistema podrá mostrar un aviso indicando que es necesario reponer el producto.
-
-En el futuro podremos utilizar Inteligencia Artificial para analizar el consumo y ayudar a prever cuándo será necesario comprar más material.
-
-9. Área privada para clientes
-
-Cada cliente tendrá un área privada a la que podrá acceder mediante su cuenta.
-
-Dentro podrá consultar:
-
-Próximas citas.
-Servicios contratados.
-Historial de servicios.
-Presupuestos.
-Facturas.
-Pagos.
-Informes de trabajos.
-Fotografías antes y después.
-Incidencias.
-Datos personales.
-
-Por ejemplo, después de realizar una limpieza, el trabajador podría completar un informe y añadir fotografías.
-
-El cliente podría acceder posteriormente a su cuenta y consultar el resultado del servicio.
-
-10. Página web pública para cada empresa
-
-Cada empresa tendrá automáticamente una página web pública.
-
-No será necesario crear una página desde cero para cada empresa.
-
-Utilizaremos una plantilla común que mostrará la información correspondiente a cada negocio.
-
-Por ejemplo:
-
-cleanflow.es/limpiezas-garcia
-
-La página podría contener:
-
-Logotipo.
-Nombre de la empresa.
-Descripción.
-Servicios.
-Precios.
-Horarios.
-Ubicación.
-Información de contacto.
-Formulario de contacto.
-Solicitud de presupuesto.
-Reserva de servicios.
-Acceso de clientes.
-
-La información se obtendrá automáticamente de la base de datos.
-
-Si una empresa cambia su teléfono desde el panel de administración, la información de su página pública también se actualizará.
-
-11. Generación de informes
-
-El sistema permitirá generar informes relacionados con los servicios realizados.
-
-Un trabajador podrá completar información como:
-
-Trabajo realizado.
-Tareas completadas.
-Material utilizado.
-Observaciones.
-Incidencias.
-Fotografías.
-
-CleanFlow podrá convertir esta información en un informe organizado para el cliente.
-
-Por ejemplo:
-
-Informe del servicio
-
-Cliente: Empresa García
-
-Servicio: Limpieza de oficina
-
-Fecha: 18/09/2026
-
-Trabajador: Juan
-
-Tareas realizadas:
-
-Limpieza de oficinas.
-Limpieza de baños.
-Limpieza de zonas comunes.
-
-Observaciones:
-
-Servicio realizado correctamente.
-
-El informe podrá quedar almacenado en el historial del cliente y, posteriormente, podrá descargarse o enviarse.
-
-12. Integración de Inteligencia Artificial
-
-CleanFlow incorporará diferentes funciones de Inteligencia Artificial para ayudar tanto a la empresa como a sus clientes.
-
-Dentro del panel podremos tener un asistente donde el administrador pueda escribir preguntas como:
-
-"¿Cuántos servicios tengo esta semana?"
-
-"¿Qué presupuestos están pendientes?"
-
-"Hazme un resumen de los servicios realizados este mes."
-
-La IA podrá analizar la información que el usuario tenga permiso para consultar y proporcionar una respuesta.
-
-También podrá utilizarse para:
-
-Crear borradores de presupuestos.
-Generar textos.
-Crear informes.
-Responder preguntas frecuentes.
-Ayudar a analizar los datos de la empresa.
-Detectar posibles necesidades de inventario.
-
-En la página pública también podremos incorporar un chatbot que responda preguntas de los clientes sobre los servicios, horarios y otra información de la empresa.
-
-13. Sistema multiempresa
-
-CleanFlow será una plataforma en la que podrán existir muchas empresas utilizando el mismo sistema.
-
-Por ejemplo:
-
-Empresa A
-
-Limpiezas García
-
-Empresa B
-
-Limpiezas Martínez
-
-Empresa C
-
-Clean BCN
-
-Cada empresa tendrá su propio panel y sus propios datos.
-
-Cuando un usuario de Limpiezas García inicia sesión, solamente verá la información correspondiente a Limpiezas García.
-
-No será necesario instalar una aplicación diferente para cada empresa.
-
-La misma aplicación podrá funcionar para todas ellas.
-
-14. Protección y separación de los datos de cada empresa
-
-La seguridad será una parte fundamental de CleanFlow.
-
-Los datos de una empresa deberán estar separados de los datos de las demás empresas.
-
-Por ejemplo, un usuario de Limpiezas García no deberá poder acceder a:
-
-Clientes de Limpiezas Martínez.
-Facturas de Limpiezas Martínez.
-Trabajadores de Limpiezas Martínez.
-Servicios de Limpiezas Martínez.
-Información privada de Limpiezas Martínez.
-
-Para conseguirlo se utilizarán sistemas de autenticación, usuarios, roles, permisos y reglas de seguridad en la base de datos.
-
-También se tendrán en cuenta medidas como:
-
-Contraseñas protegidas.
-HTTPS.
-Protección de sesiones.
-Validación de datos.
-Protección contra accesos no autorizados.
-Variables de entorno para las claves privadas.
-Copias de seguridad.
-Control de permisos.
-Registro de determinadas acciones.
-
-El objetivo será que cada usuario solamente pueda acceder a la información que le corresponde.
+Proyecto de desarrollo de una plataforma SaaS de gestión empresarial.
