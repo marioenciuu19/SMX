@@ -1,4 +1,4 @@
-# 🧹 CleanFlow
+# Nexora
 
 ### Plataforma SaaS de gestión empresarial para empresas de servicios
 
@@ -33,7 +33,7 @@
 
 # 1. Introducción — ¿Qué estamos haciendo?
 
-CleanFlow es una plataforma SaaS diseñada para ayudar a pequeñas y medianas empresas de servicios a gestionar su actividad desde una única aplicación.
+Nexora es una plataforma SaaS diseñada para ayudar a pequeñas y medianas empresas de servicios a gestionar su actividad desde una única aplicación.
 
 El objetivo principal es centralizar en una misma plataforma la gestión de:
 
@@ -47,7 +47,7 @@ El objetivo principal es centralizar en una misma plataforma la gestión de:
 * Inventario.
 * Informes.
 
-Además, cada empresa podrá disponer de una página web pública generada automáticamente a partir de la información almacenada en CleanFlow.
+Además, cada empresa podrá disponer de una página web pública generada automáticamente a partir de la información almacenada en Nexora.
 
 ---
 
@@ -55,7 +55,7 @@ Además, cada empresa podrá disponer de una página web pública generada autom
 
 ### 2.1. Idea inicial
 
-La idea de **CleanFlow** surge de observar que muchas pequeñas empresas de servicios utilizan diferentes herramientas para gestionar su actividad diaria.
+La idea de **Nexora** surge de observar que muchas pequeñas empresas de servicios utilizan diferentes herramientas para gestionar su actividad diaria.
 
 En muchos casos, utilizan una aplicación para las citas, otra para los clientes, otra para las facturas y diferentes documentos para controlar los trabajadores y el inventario.
 
@@ -142,7 +142,7 @@ Durante la lluvia de ideas identificamos varios problemas habituales:
 
 #### 🌐 Página web
 
-Cada empresa podrá disponer de una página web pública generada desde CleanFlow.
+Cada empresa podrá disponer de una página web pública generada desde Nexora.
 
 La página podrá mostrar:
 
