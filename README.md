@@ -7,7 +7,7 @@
 # 📑 Índice
 
 1. [Introducción — ¿Qué estamos haciendo?](#1-introducción--qué-estamos-haciendo)
-2. [Briefing de ideas](#2-briefing-de-ideas)
+2. [Briefing de ideas — Lluvia de ideas](#2-briefing-de-ideas--lluvia-de-ideas)
 3. [Arquitectura del software](#3-arquitectura-del-software)
 4. [Tecnologías a utilizar](#4-tecnologías-a-utilizar)
 5. [Red](#5-red)
