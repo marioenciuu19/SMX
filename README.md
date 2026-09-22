@@ -51,34 +51,222 @@ Además, cada empresa podrá disponer de una página web pública generada autom
 
 ---
 
-# 2. Briefing de ideas
+## 2. Briefing de ideas — Lluvia de ideas
 
-## 💡 Idea principal
+### 2.1. Idea inicial
 
-Crear una plataforma de gestión empresarial que permita a las empresas de servicios administrar su negocio de forma sencilla desde un único lugar.
+La idea de **CleanFlow** surge de observar que muchas pequeñas empresas de servicios utilizan diferentes herramientas para gestionar su actividad diaria.
 
-## 🎯 Público objetivo
+En muchos casos, utilizan una aplicación para las citas, otra para los clientes, otra para las facturas y diferentes documentos para controlar los trabajadores y el inventario.
 
-CleanFlow estará dirigido principalmente a:
+Por este motivo, pensamos en crear una plataforma que reúna todas estas funciones en un único lugar.
 
-* Pequeñas empresas.
-* Medianas empresas.
-* Empresas de limpieza.
-* Empresas de mantenimiento.
-* Empresas de servicios profesionales.
-* Autónomos que necesiten gestionar clientes y servicios.
+### 2.2. Problemas detectados
 
-## 🚀 Objetivos
+Durante la lluvia de ideas identificamos varios problemas habituales:
 
-* Centralizar la información.
-* Facilitar la gestión de clientes.
-* Organizar trabajadores.
-* Gestionar servicios y citas.
-* Controlar presupuestos y facturas.
-* Controlar inventario.
-* Crear páginas web para empresas.
-* Separar los datos de cada empresa.
-* Incorporar Inteligencia Artificial.
+* Información repartida entre diferentes programas.
+* Dificultad para organizar las citas.
+* Falta de control sobre los clientes.
+* Problemas para controlar los trabajadores.
+* Presupuestos realizados manualmente.
+* Facturas difíciles de organizar.
+* Falta de control del inventario.
+* Pérdida de información importante.
+* Dificultad para consultar el historial de un cliente.
+* Poca automatización de tareas.
+* Falta de informes sobre el funcionamiento del negocio.
+* Dificultad para mantener actualizada la página web.
+
+### 2.3. Lluvia de ideas
+
+#### 👥 Clientes
+
+* Crear y modificar clientes.
+* Guardar sus datos de contacto.
+* Consultar su historial.
+* Ver sus citas.
+* Consultar presupuestos y facturas.
+* Añadir notas.
+* Registrar incidencias.
+* Guardar fotografías relacionadas con los servicios.
+
+#### 👷 Trabajadores
+
+* Crear trabajadores.
+* Crear cuentas de acceso.
+* Asignar servicios.
+* Consultar horarios.
+* Gestionar permisos.
+* Ver tareas asignadas.
+* Registrar el trabajo realizado.
+
+#### 📅 Citas
+
+* Calendario diario, semanal y mensual.
+* Crear citas.
+* Modificar citas.
+* Cancelar citas.
+* Asignar trabajadores.
+* Asignar servicios.
+* Gestionar diferentes estados.
+* Enviar avisos y recordatorios.
+
+#### 📄 Presupuestos
+
+* Crear presupuestos.
+* Añadir servicios y materiales.
+* Aplicar descuentos.
+* Calcular impuestos.
+* Calcular automáticamente el precio total.
+* Enviar presupuestos al cliente.
+* Permitir aceptar o rechazar presupuestos.
+
+#### 💰 Facturas y pagos
+
+* Crear facturas.
+* Consultar facturas.
+* Descargar facturas.
+* Controlar pagos.
+* Marcar facturas como pagadas o pendientes.
+* Consultar el historial de pagos.
+
+#### 📦 Inventario
+
+* Registrar productos.
+* Controlar cantidades.
+* Registrar proveedores.
+* Establecer un stock mínimo.
+* Avisar cuando un producto tenga poco stock.
+* Consultar movimientos del inventario.
+
+#### 🌐 Página web
+
+Cada empresa podrá disponer de una página web pública generada desde CleanFlow.
+
+La página podrá mostrar:
+
+* Nombre de la empresa.
+* Logotipo.
+* Descripción.
+* Servicios.
+* Precios.
+* Horarios.
+* Ubicación.
+* Información de contacto.
+* Solicitud de presupuestos.
+* Reserva de citas.
+* Acceso para clientes.
+
+### 2.4. Ideas de automatización
+
+Para reducir el trabajo manual, planteamos:
+
+* Recordatorios automáticos de citas.
+* Avisos de facturas pendientes.
+* Avisos de productos con poco stock.
+* Generación automática de informes.
+* Cálculo automático de presupuestos.
+* Generación de facturas.
+* Actualización automática de la página web.
+
+### 2.5. Inteligencia Artificial
+
+CleanFlow incorporará herramientas de Inteligencia Artificial para ayudar a las empresas.
+
+El usuario podrá realizar preguntas como:
+
+> ¿Cuántas citas tengo esta semana?
+
+> ¿Qué presupuestos están pendientes?
+
+La IA también podrá:
+
+* Resumir información de la empresa.
+* Crear borradores de presupuestos.
+* Generar informes.
+* Ayudar a redactar mensajes para clientes.
+* Analizar información del negocio.
+* Detectar posibles necesidades de inventario.
+* Responder preguntas frecuentes.
+* Funcionar como chatbot en la página web.
+
+### 2.6. Seguridad
+
+La protección de los datos será una parte importante del proyecto.
+
+Se plantean las siguientes medidas:
+
+* Inicio de sesión.
+* Contraseñas protegidas.
+* Diferentes tipos de usuarios.
+* Permisos según el usuario.
+* Separación de los datos de cada empresa.
+* Protección de la base de datos.
+* Conexiones mediante HTTPS.
+* Copias de seguridad.
+* Registro de determinadas acciones.
+* Protección frente a accesos no autorizados.
+
+### 2.7. Sistema multiempresa
+
+CleanFlow estará diseñado para que diferentes empresas puedan utilizar la misma plataforma.
+
+```text
+                    CLEANFLOW
+                        │
+          ┌─────────────┼─────────────┐
+          │             │             │
+      Empresa A     Empresa B     Empresa C
+          │             │             │
+       Clientes      Clientes      Clientes
+       Citas         Citas         Citas
+       Facturas      Facturas      Facturas
+```
+
+Cada empresa solamente podrá acceder a sus propios datos.
+
+Por ejemplo, **Empresa A no podrá consultar los clientes de Empresa B**.
+
+### 2.8. Ideas futuras
+
+Durante la lluvia de ideas también surgieron funcionalidades que podrían incorporarse en futuras versiones:
+
+* Aplicación móvil.
+* Pagos online.
+* Valoraciones de clientes.
+* Notificaciones mediante WhatsApp.
+* Integración con Google Calendar.
+* Predicción de ventas mediante IA.
+* Predicción automática del inventario.
+* Integración con sistemas contables.
+* Aplicación móvil para trabajadores.
+* Firma digital de presupuestos y documentos.
+
+Estas funciones podrían desarrollarse posteriormente y no tienen que formar parte de la primera versión.
+
+### 2.9. Selección de la idea final
+
+Después de analizar las diferentes propuestas, decidimos desarrollar **CleanFlow**, una plataforma web de gestión empresarial.
+
+La primera versión se centrará en:
+
+1. Gestión de empresas.
+2. Gestión de clientes.
+3. Gestión de trabajadores.
+4. Gestión de servicios.
+5. Gestión de citas.
+6. Gestión de presupuestos.
+7. Gestión de facturas y pagos.
+8. Gestión de inventario.
+9. Área privada para clientes.
+10. Página web pública para cada empresa.
+11. Generación de informes.
+12. Integración de Inteligencia Artificial.
+13. Sistema multiempresa.
+14. Seguridad y separación de datos.
+
+El objetivo final de CleanFlow es ofrecer a las empresas una herramienta centralizada que les permita gestionar su actividad diaria de una forma más organizada, sencilla y eficiente.
 
 ---
 
