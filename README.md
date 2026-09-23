@@ -172,7 +172,7 @@ Para reducir el trabajo manual, planteamos:
 
 ### 2.5. Inteligencia Artificial
 
-CleanFlow incorporará herramientas de Inteligencia Artificial para ayudar a las empresas.
+Impulsa incorporará herramientas de Inteligencia Artificial para ayudar a las empresas.
 
 El usuario podrá realizar preguntas como:
 
