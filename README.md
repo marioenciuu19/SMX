@@ -1,4 +1,4 @@
-# Nexora
+# Impulsa
 
 ### Plataforma SaaS de gestión empresarial para empresas de servicios
 
@@ -33,7 +33,7 @@
 
 # 1. Introducción — ¿Qué estamos haciendo?
 
-Nexora es una plataforma SaaS diseñada para ayudar a pequeñas y medianas empresas de servicios a gestionar su actividad desde una única aplicación.
+Impulsa es una plataforma SaaS diseñada para ayudar a pequeñas y medianas empresas de servicios a gestionar su actividad desde una única aplicación.
 
 El objetivo principal es centralizar en una misma plataforma la gestión de:
 
@@ -47,7 +47,7 @@ El objetivo principal es centralizar en una misma plataforma la gestión de:
 * Inventario.
 * Informes.
 
-Además, cada empresa podrá disponer de una página web pública generada automáticamente a partir de la información almacenada en Nexora.
+Además, cada empresa podrá disponer de una página web pública generada automáticamente a partir de la información almacenada en Impulsa.
 
 ---
 
@@ -55,7 +55,7 @@ Además, cada empresa podrá disponer de una página web pública generada autom
 
 ### 2.1. Idea inicial
 
-La idea de **Nexora** surge de observar que muchas pequeñas empresas de servicios utilizan diferentes herramientas para gestionar su actividad diaria.
+La idea de **Impulsa** surge de observar que muchas pequeñas empresas de servicios utilizan diferentes herramientas para gestionar su actividad diaria.
 
 En muchos casos, utilizan una aplicación para las citas, otra para los clientes, otra para las facturas y diferentes documentos para controlar los trabajadores y el inventario.
 
@@ -247,7 +247,7 @@ Estas funciones podrían desarrollarse posteriormente y no tienen que formar par
 
 ### 2.9. Selección de la idea final
 
-Después de analizar las diferentes propuestas, decidimos desarrollar **CleanFlow**, una plataforma web de gestión empresarial.
+Después de analizar las diferentes propuestas, decidimos desarrollar **Impulsa**, una plataforma web de gestión empresarial.
 
 La primera versión se centrará en:
 
@@ -332,7 +332,7 @@ Se contemplan tecnologías para:
 
 # 5. Red
 
-La infraestructura de red permitirá conectar los diferentes dispositivos y servicios necesarios para el funcionamiento de CleanFlow.
+La infraestructura de red permitirá conectar los diferentes dispositivos y servicios necesarios para el funcionamiento de Impulsa.
 
 Se tendrán en cuenta:
 
@@ -414,7 +414,7 @@ Se incluirán:
 
 # 9. Web
 
-CleanFlow contará con una aplicación web desde la que los usuarios podrán gestionar sus empresas.
+Impulsa contará con una aplicación web desde la que los usuarios podrán gestionar sus empresas.
 
 ## Funcionalidades
 
@@ -435,7 +435,7 @@ CleanFlow contará con una aplicación web desde la que los usuarios podrán ges
 
 # 10. Diseño
 
-El diseño de CleanFlow buscará ofrecer una interfaz:
+El diseño de Impulsa buscará ofrecer una interfaz:
 
 * Sencilla.
 * Moderna.
@@ -512,7 +512,7 @@ Los accesos disponibles dependerán del tipo de usuario y de sus permisos.
 
 # 13. Base de datos
 
-La base de datos almacenará toda la información necesaria para el funcionamiento de CleanFlow.
+La base de datos almacenará toda la información necesaria para el funcionamiento de Impulsa.
 
 Se contemplan entidades como:
 
@@ -547,7 +547,7 @@ La estructura deberá garantizar que los datos de cada empresa estén correctame
 
 # 14. Servicios
 
-CleanFlow utilizará diferentes servicios para funcionar.
+Impulsa utilizará diferentes servicios para funcionar.
 
 De forma sencilla:
 
@@ -586,13 +586,13 @@ El DNS será el encargado de traducir nombres de dominio a direcciones IP.
 Ejemplo:
 
 ```text
-cleanflow.es
+Impulsa.es
       │
       ▼
 Dirección IP del servidor
       │
       ▼
-Aplicación CleanFlow
+Aplicación Impulsa
 ```
 
 También se podrán utilizar subdominios para diferentes servicios.
@@ -686,7 +686,7 @@ Se definirán reglas para controlar:
 
 # 19. Copias de seguridad
 
-CleanFlow necesitará un sistema de copias de seguridad para proteger la información.
+Impulsa necesitará un sistema de copias de seguridad para proteger la información.
 
 Se realizarán copias de elementos como:
 
@@ -787,7 +787,7 @@ La guía explicará:
 
 **En desarrollo**
 
-Actualmente CleanFlow se encuentra en fase de planificación y diseño.
+Actualmente Impulsa se encuentra en fase de planificación y diseño.
 
 ---
 
