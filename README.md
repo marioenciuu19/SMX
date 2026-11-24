@@ -1264,7 +1264,7 @@ El diseño contempla los siguientes apartados:
 
 A continuación se incorporará la imagen del mockup realizado para representar el diseño de la plataforma Impulsa.
 
-<img src=SMX/
+<img src=SMX/hola.png>
 
 #### 23.2.5. Conclusión
 
